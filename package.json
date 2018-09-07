@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
-    "clean": "cross-env rm -rf dist",
-    "css": "cross-env cp src/index.css dist/main.css"
+    "clean": "rm -rf dist",
+    "css": "cp src/index.css dist/main.css"
   },
   "author": "",
   "license": "ISC",
