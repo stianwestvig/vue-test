@@ -1,11 +1,11 @@
 
 build:
 	npm run-script build
-	npm run-script css
+	cp src/index.css dist/main.css
 	make tree
 
 clean:
-	npm run-script clean
+	rm -rf dist
 	make tree
 
 configure:
@@ -19,3 +19,6 @@ test:
 
 tree:
 	tree -a -I ".git|node_modules"
+
+watch:
+	npm run-script watch

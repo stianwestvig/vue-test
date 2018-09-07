@@ -1,3 +1,3 @@
-import vue from 'vue';
+import Vue from 'vue';
 
-console.log('I live, got this thing', vue);
+console.log('I live, got this thing', new Vue());
